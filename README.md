@@ -103,8 +103,4 @@ Tests cover API payload mapping, malformed score/book records, a local HTTP scor
 - Email checks are basic syntax checks, not proof that an address exists. Score upper bounds are intentionally not enforced because the prompt does not define a grading scale.
 - Open Library identifies its Search API as experimental; isolate API-specific parsing in `books.py` so changes can be handled in one place.
 
-## Interview preparation
 
-Be ready to explain the request/validation/persistence flow, why parameterized queries prevent SQL injection, why CSV is fully validated before the database transaction begins, why API calls need timeouts and response-size limits, and how you would adapt the score parser after inspecting the actual API schema.
-
-The requested links to your most complex prior Python and database code must point to work you actually authored. Add those links when preparing the application; this repository does not claim to be your prior work.
