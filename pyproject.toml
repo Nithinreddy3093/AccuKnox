@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "accuknox-assessment1"
+version = "1.0.0"
+description = "Python solution for the AccuKnox trainee data handling assignment"
+requires-python = ">=3.10"
+dependencies = ["matplotlib>=3.7,<4"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+assessment1 = "assessment1.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
